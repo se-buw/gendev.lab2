@@ -6,7 +6,6 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: lab2.jar,
  lib/executor.jar
 Automatic-Module-Name: de.buw.se.gendev.lab2
-Bundle-RequiredExecutionEnvironment: JavaSE-15
 Export-Package: de.buw.se.gendev.lab2,
  doc,
  doc.tau.smlab.syntech.controller.executor,
@@ -28,3 +27,11 @@ Export-Package: de.buw.se.gendev.lab2,
  tau.smlab.syntech.jtlv,
  tau.smlab.syntech.jtlv.env.module,
  tau.smlab.syntech.jtlv.lib
+Require-Bundle: tau.smlab.syntech.Spectra;bundle-version="1.0.0",
+ tau.smlab.syntech.spectragameinput;bundle-version="1.0.0",
+ tau.smlab.syntech.gameinput;bundle-version="1.0.0",
+ tau.smlab.syntech.gameinputtrans;bundle-version="1.0.0",
+ org.eclipse.xtext;bundle-version="2.25.0",
+ org.apache.log4j;bundle-version="1.2.15",
+ org.eclipse.core.runtime;bundle-version="3.20.100",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.25.0"
