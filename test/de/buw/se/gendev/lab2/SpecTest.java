@@ -14,16 +14,20 @@ import tau.smlab.syntech.spectragameinput.SpectraTranslationException;
 
 class SpecTest {
 	static final String specFile = "Spec.spectra";
+	static final String specFileUnreal = "Spec_Unreal.spectra";
 
-	/**
-	 * Sanity check whether ecore file exists.
-	 */
 	@Test
 	void testModelExists() {
 		File f = new File(specFile);
 		assertTrue("Make sure that the original file " + specFile + " has not been deleted or renamed.", f.exists());
 	}
 
+	@Test
+	void testUnsatVersionExists() {
+		File f = new File(specFileUnreal);
+		assertTrue("Make sure that the file " + specFileUnreal + " has been created.", f.exists());
+	}
+	
 	@Test
 	void testVarsEnv() throws ErrorsInSpectraException, SpectraTranslationException {
 		// get the Xtext-based input parser
