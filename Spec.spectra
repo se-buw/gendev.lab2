@@ -2,9 +2,5 @@ import "DwyerPatterns.spectra"
 
 spec Spec
 
-sys boolean b1;
-sys boolean b2;
-sys boolean b3;
-
 gar
   alw TRUE;

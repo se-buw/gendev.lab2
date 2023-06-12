@@ -5,7 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import tau.smlab.syntech.controller.executor.ControllerExecutor;
-import tau.smlab.syntech.controller.jit.BasicJitController;
+import tau.smlab.syntech.games.controller.jits.BasicJitController;
+
 
 public class SpecSimulatorCmd {
 
@@ -14,7 +15,7 @@ public class SpecSimulatorCmd {
 		Map<String, String> inputs = new HashMap<>();
 
 		// Instantiate a new controller executor
-		ControllerExecutor executor = new ControllerExecutor(new BasicJitController(), "out/");
+		ControllerExecutor executor = new ControllerExecutor(new BasicJitController(), "out/jit", "Spec");
 
 		boolean iniState = true;
 		while (true) {
