@@ -9,8 +9,12 @@ Follow the Spectra tutorial available from [https://se-buw.github.io/gse/tutoria
 -   You may start watching the tutorial videos from here:
     <https://www.youtube.com/watch?v=smDcuR3NP44&list=PLGyeoukah9Nbx1QquUmZGdLulFZIsiRlZ&index=3>
 
--   The code for all tasks is available from GitHub:
+-   The code for all tasks of the tutorial is available from GitHub:
     <https://github.com/jringert/spectra-tutorial>
+
+-   Spectra specifications may also be edited in the Formal Methods Playground (does not support all features of the Spectra Eclipse plug-in):
+    <https://play.formal-methods.net/?check=SPECTRA>
+-   
 
 The tutorial consists of explanation videos with simple tasks. Please
 try these yourself. Solution videos are provided, but just watching
@@ -60,9 +64,9 @@ You may use the provided test cases to see your progress. All test cases
 should pass for your submission. The test cases are not able to test the
 simulation of the controller!
 
-See this video when using Eclipse: <https://youtu.be/SIDXccugsyY>
+See this video when using Eclipse with the Spectra plug-ins installed: <https://youtu.be/SIDXccugsyY>
 
-See this video when using VS Code or any other IDE supporting gradle: <>
+See this video when using VS Code or any other IDE supporting Gradle: <>
 
 ---
 
