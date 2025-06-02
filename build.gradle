@@ -44,3 +44,12 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+task synthesize(type: JavaExec) {
+    // Path to your JAR file
+    classpath = files('lib/spectra-cli.jar ')
+    // Replace with the fully qualified main class name in the JAR
+    mainClass = 'tau.smlab.syntech.Spectra.cli.SpectraCliTool'
+    // (Optional) Pass arguments to the main method
+    args = ['-i', 'Spec.spectra', '-a', 'symbolic-controller']
+}
