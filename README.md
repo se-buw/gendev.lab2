@@ -1,11 +1,10 @@
 # Reactive Synthesis with Spectra
 ## Activity: Learn Spectra, controller synthesis, and execution
 
-Follow the Spectra tutorial available from [http://smlab.cs.tau.ac.il/syntech/tutorial/](http://smlab.cs.tau.ac.il/syntech/tutorial/).
+Follow the Spectra tutorial available from [https://se-buw.github.io/gse/tutorials/spectra/](https://se-buw.github.io/gse/tutorials/spectra/0a.Reactive-synthesis-with-Spectra/).
 
 -   This includes the installation of the Spectra plug-ins from this
-    Eclipse update site:
-    <http://smlab.cs.tau.ac.il/syntech/spectra/tools/update/>
+    Eclipse update site: `http://smlab.cs.tau.ac.il/syntech/spectra/tools/update/`
 
 -   You may start watching the tutorial videos from here:
     <https://www.youtube.com/watch?v=smDcuR3NP44&list=PLGyeoukah9Nbx1QquUmZGdLulFZIsiRlZ&index=3>
@@ -22,12 +21,12 @@ learning effect.
 
 ## Homework task: Your Own Reactive System
 
-Clone this repository and import it into your Eclipse.
-Make sure to install the required Spectra plug-ins.
+Clone this repository and import it into your IDE (Eclipse, VS Code, or simply using Gradle). Edit the specification file either on the Formal Methods Playground or in your IDE.
+Make sure to install the required Spectra plug-ins for the best editing experience in Eclipse.
 
 To pass this part you need to:
 
--   Create a meaningful Spectra specification Spec.spectra of some
+-   Create a meaningful Spectra specification `Spec.spectra` of some
     reactive system (see
     [\[L1\]](https://www.youtube.com/watch?v=IVzfd3zz0jc&list=PLGyeoukah9Nbx1QquUmZGdLulFZIsiRlZ&index=3)-[\[L3\]](https://www.youtube.com/watch?v=9uTs4wD45JA&list=PLGyeoukah9Nbx1QquUmZGdLulFZIsiRlZ&index=15))
     with at least
@@ -49,8 +48,8 @@ To pass this part you need to:
 
 -   Create a variant of your specification that is unrealizable due to a
     missing justice assumption. Provide the assumption commented out in
-    the specification Spec\_Unreal.spectra and mark it with the comment
-    “//FIX” preceding it.
+    the specification `Spec_Unreal.spectra` and mark it with the comment
+    `//FIX` preceding it.
 
 -   Synthesize a Just-in-time symbolic controller for the realizable
     specification in file Spec.spectra and write code to execute it (see
@@ -61,7 +60,9 @@ You may use the provided test cases to see your progress. All test cases
 should pass for your submission. The test cases are not able to test the
 simulation of the controller!
 
-See this video: <https://youtu.be/SIDXccugsyY>
+See this video when using Eclipse: <https://youtu.be/SIDXccugsyY>
+
+See this video when using VS Code or any other IDE supporting gradle: <>
 
 ---
 
