@@ -1,3 +1,8 @@
+#### 💯Points: ![Points bar](../../blob/badges/.github/badges/points-bar.svg)
+
+#### 📝 [Report](../../blob/badges/report.md)
+---
+
 # Reactive Synthesis with Spectra
 ## Activity: Learn Spectra, controller synthesis, and execution
 
