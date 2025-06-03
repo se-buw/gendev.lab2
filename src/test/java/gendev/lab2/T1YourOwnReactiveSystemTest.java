@@ -1,6 +1,9 @@
 package gendev.lab2;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.TestMethodOrder;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,17 +30,20 @@ import tau.smlab.syntech.spectragameinput.ErrorsInSpectraException;
 import tau.smlab.syntech.spectragameinput.SpectraInputProviderNoIDE;
 import tau.smlab.syntech.spectragameinput.SpectraTranslationException;
 
-class SpecTest {
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+class T1YourOwnReactiveSystemTest {
 	static final String specFile = "Spec.spectra";
 	static final String specFileUnreal = "Spec_Unreal.spectra";
 
 	@Test
+	@Order(1)
 	void testModelExists() {
 		File f = new File(specFile);
 		assertTrue(f.exists(), "Make sure that the original file " + specFile + " has not been deleted or renamed.");
 	}
 
 	@Test
+	@Order(2)
 	void testUnrealizableVersionExists() {
 		File f = new File(specFileUnreal);
 		assertTrue(f.exists(), "Make sure that the file " + specFileUnreal + " has been created.");
@@ -45,6 +51,7 @@ class SpecTest {
 
 	
 	@Test
+	@Order(3)
 	void testUnrealizableVersionUnrealizable() throws SpectraTranslationException {
 		GameModel model = getModel(specFileUnreal);
 		    GR1Game gr1 = getGR1Game(model, BDDPackage.getCurrPackage(), true);
@@ -53,6 +60,7 @@ class SpecTest {
 	}
 	
 	@Test
+	@Order(4)
 	void testVarsEnv() throws ErrorsInSpectraException, SpectraTranslationException {
 		// get the Xtext-based input parser
 		SpectraInputProviderNoIDE sip = new SpectraInputProviderNoIDE();
@@ -62,6 +70,7 @@ class SpecTest {
 	}
 
 	@Test
+	@Order(5)
 	void testVarsSys() throws ErrorsInSpectraException, SpectraTranslationException {
 		// get the Xtext-based input parser
 		SpectraInputProviderNoIDE sip = new SpectraInputProviderNoIDE();
@@ -71,6 +80,7 @@ class SpecTest {
 	}
 
 	@Test
+	@Order(6)
 	void testGars() throws ErrorsInSpectraException, SpectraTranslationException {
 		// get the Xtext-based input parser
 		SpectraInputProviderNoIDE sip = new SpectraInputProviderNoIDE();
@@ -80,6 +90,7 @@ class SpecTest {
 	}
 
 	@Test
+	@Order(7)
 	void testAsms() throws ErrorsInSpectraException, SpectraTranslationException {
 		// get the Xtext-based input parser
 		SpectraInputProviderNoIDE sip = new SpectraInputProviderNoIDE();
@@ -90,6 +101,7 @@ class SpecTest {
 
 		
 	@Test
+	@Order(8)
 	void testRealizable() throws SpectraTranslationException {
 		GameModel model = getModel(specFile);
 		    GR1Game gr1 = getGR1Game(model, BDDPackage.getCurrPackage(), true);
@@ -98,6 +110,7 @@ class SpecTest {
 	}
 
 	@Test
+	@Order(9)
 	void testWellSeparated() throws ErrorsInSpectraException, SpectraTranslationException {
 		GameModel model = getModel(specFile);
 		
