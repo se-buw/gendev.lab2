@@ -53,3 +53,16 @@ task synthesize(type: JavaExec) {
     // (Optional) Pass arguments to the main method
     args = ['-i', 'Spec.spectra', '-a', 'symbolic-controller']
 }
+
+test {
+    testLogging {
+        events "failed"
+        showStandardStreams = true
+        exceptionFormat "full"
+        showCauses false
+        showExceptions true
+        showStackTraces false
+        showStandardStreams = false
+    }
+    reports.html.required = true 
+}
