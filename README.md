@@ -1,7 +1,7 @@
 # Reactive Synthesis with Spectra
 ## Activity: Learn Spectra, controller synthesis, and execution
 
-Follow the Spectra tutorial available from [https://se-buw.github.io/gse/tutorials/spectra/](https://se-buw.github.io/gse/tutorials/spectra/0a.Reactive-synthesis-with-Spectra/).
+Follow the Spectra tutorial available from [https://se-buw.github.io/gse/tutorials/spectra/](https://se-buw.github.io/gse/tutorials/spectra/0a.Reactive-synthesis-with-Spectra/). You may skip parts [D1] and [D2].
 
 -   This includes the installation of the Spectra plug-ins from this
     Eclipse update site: `http://smlab.cs.tau.ac.il/syntech/spectra/tools/update/`
@@ -14,7 +14,6 @@ Follow the Spectra tutorial available from [https://se-buw.github.io/gse/tutoria
 
 -   Spectra specifications may also be edited in the Formal Methods Playground (does not support all features of the Spectra Eclipse plug-in):
     <https://play.formal-methods.net/?check=SPECTRA>
--   
 
 The tutorial consists of explanation videos with simple tasks. Please
 try these yourself. Solution videos are provided, but just watching
@@ -56,9 +55,9 @@ To pass this part you need to:
     `//FIX` preceding it.
 
 -   Synthesize a Just-in-time symbolic controller for the realizable
-    specification in file Spec.spectra and write code to execute it (see
+    specification in file `Spec.spectra` and write code to execute it (see
     [\[E2\]](https://www.youtube.com/watch?v=Zu-EL3fSeIM&list=PLGyeoukah9Nbx1QquUmZGdLulFZIsiRlZ&index=13))
-    in class de.buw.se.gendev.lab2.SpecSimulatorCmd.
+    in class `gendev.lab2.SpecSimulatorCmd`.
 
 You may use the provided test cases to see your progress. All test cases
 should pass for your submission. The test cases are not able to test the
@@ -66,9 +65,9 @@ simulation of the controller!
 
 See this video when using Eclipse with the Spectra plug-ins installed: <https://youtu.be/SIDXccugsyY>
 
-See this video when using VS Code or any other IDE supporting Gradle: <>
+See this video when using VS Code or any other IDE supporting Gradle: <https://youtu.be/fNl9TVYBeow>
 
 ---
 
 ## Submission
-Commit your solution into GitHub and submit the repository link in Moodle.
+Commit and push your solution to GitHub and submit the repository link in Moodle.
