@@ -6,10 +6,12 @@
 # Reactive Synthesis with Spectra
 ## Activity: Learn Spectra, controller synthesis, and execution
 
-Follow the Spectra tutorial available from [https://se-buw.github.io/gse/tutorials/spectra/](https://se-buw.github.io/gse/tutorials/spectra/0a.Reactive-synthesis-with-Spectra/). You may skip parts [D1] and [D2].
+Follow the Spectra tutorial available from <https://se-buw.de/teaching/gse/tutorials/spectra/>. You may skip parts [D1] and [D2].
 
 -   This includes the installation of the Spectra plug-ins from this
-    Eclipse update site: `http://smlab.cs.tau.ac.il/syntech/spectra/tools/update/`
+    Eclipse update site: 
+    
+    ```https://se-buw.de/teaching/gse/tutorials/spectra/tools/update```
 
 -   You may start watching the tutorial videos from here:
     <https://www.youtube.com/watch?v=smDcuR3NP44&list=PLGyeoukah9Nbx1QquUmZGdLulFZIsiRlZ&index=3>
